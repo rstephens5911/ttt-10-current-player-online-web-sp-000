@@ -8,11 +8,7 @@ def turn_count(board)
   end
 end
 
-  def current_player(board)
-    count = turn_count(board).to_i
-    if count % 2 == 0
-      "O"
-    else
-      "X"
-    end
-  end
+def current_player(board)
+  # trenary:
+  turn_count(board) % 2 == 0 ? "X" : "O"
+end
